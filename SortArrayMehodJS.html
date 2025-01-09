@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array Method</title>
+</head>
+<h1>Sort Array Method JS</h1>
+<p>Click on the butoons to sort the array into ascending od descending order</p>
+<button onclick="ascending()">Click for Ascending order</button>
+<button onclick="descending()">Click for Descending order</button>
+<p id="result"></p>
+<script>
+    var points = [10, 52, 86, 3, 79];
+    document.getElementById("result").innerHTML = points;
+    function ascending() {
+        points.sort(function (a, b) { return a - b });
+        document.getElementById("result").innerHTML = points;
+    }
+    function descending() {
+        points.sort(function (a, b) { return b - a });
+        document.getElementById("result").innerHTML = points;
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
